@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    height: 850px;
+    background: linear-gradient(240deg, #15e1b2, #00bb83 , #5686ed);
+    background-size: 600% 600%;
+    animation: gradient-animation 15s ease-in infinite;
+    font-family: Arial, sans-serif;
+    color: white;
+}
