@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quick Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+</head>
+<body>
+    <div class="content">
+        <h2>Explore -> Learn -> Quiz!</h2>
+        <h4>Check your Knowledge</h4>
+
+        <div class="cards-container">
+            <div class="card" data-url="/Easy.html" onclick="selectCard(this)" >
+            <h2>Easy</h2>
+            <p>Easy part contains Questions from basic HTML , CSS , C language and Computer!!</p>
+            </div>
+            <div class="card" data-url="/Medium.html" onclick="selectCard(this)">
+            <h2>Medium</h2>
+            <p>Medium part contains Questions from Javascript , Java , SQL and DBMS !!</p>
+            </div>
+            <div class="card" data-url="/Hard.html" onclick="selectCard(this)">
+            <h2>Hard</h2>
+            <p>Hard part contains Questions from NodeJS, Javascript , Java , DBMS and GIT</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="beginGame()"> Start </button>
+        </div>
+
+        <div class="last">
+            <h3 id="last">
+                Why do you scroll, Just Select a level and start !!
+            </h3>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

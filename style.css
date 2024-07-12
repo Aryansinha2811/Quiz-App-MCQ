@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    height: 850px;
+    /* overflow: hidden; */
+    background: linear-gradient(240deg, #15e1b2, #00bb83 , #5686ed);
+    background-size: 600% 600%;
+    animation: gradient-animation 15s ease-in infinite;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0; /* Start opacity */
+    }
+    100% {
+      opacity: 1; /* End opacity */
+    }
+}
+
+
+.content {
+    font-family: monospace;
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}
+
+.card {
+    background: white;
+    color: #333;
+    border-radius: 28px;
+    padding: 20px;
+    width: 280px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card.selected {
+    border: 3px solid #2be24c;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+}
+
+.card.selected::after {
+    content: '';
+    position: absolute;
+    bottom: 365px;
+    left: 94%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #2be24c;
+    border-radius: 60%;
+    transition: 2s;
+    box-shadow: 0 0 10px #35d652;
+    opacity: 0;
+    animation: fadeInAnimation 0.7s ease forwards; 
+}
+
+.card h2 {
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.button {
+    width: 150px;
+    height: 60px;
+    background: #ffe311;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background: #f4dc26;
+}
+
+#last{
+    position: relative;
+    bottom: -100px;
+    color: black;
+}
