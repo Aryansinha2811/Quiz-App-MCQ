@@ -5,9 +5,9 @@ const quizQuestionsEasy = [
           A: "Hyper Text Markup Language",
           B: "High Text Markup Language",
           C: "Hyper Tabular Markup Language",
-          D: "None of the above"
+          D: "None of the above",
       },
-      answer: "A"
+      answer: "A",
   },
   {
       question: "Which CSS property controls the text size?",
@@ -15,9 +15,9 @@ const quizQuestionsEasy = [
           A: "font-size",
           B: "text-size",
           C: "text-style",
-          D: "font-style"
+          D: "font-style",
       },
-      answer: "A"
+      answer: "A",
   },
   {
       question: "What does CSS stand for?",
@@ -25,9 +25,9 @@ const quizQuestionsEasy = [
           A: "Computer Style Sheets",
           B: "Cascading Style Sheets",
           C: "Creative Style Sheets",
-          D: "Colorful Style Sheets"
+          D: "Colorful Style Sheets",
       },
-      answer: "B"
+      answer: "B",
   },
   {
       question: "Which CSS property controls the background color of an element?",
@@ -35,19 +35,20 @@ const quizQuestionsEasy = [
           A: "color",
           B: "background-color",
           C: "bgcolor",
-          D: "background-style"
+          D: "background-style",
       },
-      answer: "B"
+      answer: "B",
   },
   {
-      question: "Which of the following is not a valid variable name in JavaScript?",
+      question:
+          "Which of the following is not a valid variable name in JavaScript?",
       options: {
           A: "2myVar",
           B: "_myVar",
           C: "myVar2",
-          D: "my_Var"
+          D: "my_Var",
       },
-      answer: "A"
+      answer: "A",
   },
   {
       question: "What is the output of 2 + '2' in JavaScript?",
@@ -55,9 +56,9 @@ const quizQuestionsEasy = [
           A: "4",
           B: "22",
           C: "Error",
-          D: "Undefined"
+          D: "Undefined",
       },
-      answer: "B"
+      answer: "B",
   },
   {
       question: "Who is the father of C programming language?",
@@ -65,9 +66,9 @@ const quizQuestionsEasy = [
           A: "Dennis Ritchie",
           B: "Brian Kernighan",
           C: "Ken Thompson",
-          D: "Bjarne Stroustrup"
+          D: "Bjarne Stroustrup",
       },
-      answer: "A"
+      answer: "A",
   },
   {
       question: "Which symbol is used for single-line comments in C?",
@@ -75,9 +76,9 @@ const quizQuestionsEasy = [
           A: "//",
           B: "/*",
           C: "#",
-          D: "--"
+          D: "--",
       },
-      answer: "A"
+      answer: "A",
   },
   {
       question: "What is the main function of a CPU?",
@@ -85,9 +86,9 @@ const quizQuestionsEasy = [
           A: "To execute programs",
           B: "To store data",
           C: "To connect to the internet",
-          D: "To display graphics"
+          D: "To display graphics",
       },
-      answer: "A"
+      answer: "A",
   },
   {
       question: "Which component of the computer stores data temporarily?",
@@ -95,39 +96,42 @@ const quizQuestionsEasy = [
           A: "RAM",
           B: "Hard Drive",
           C: "CPU",
-          D: "Motherboard"
+          D: "Motherboard",
       },
-      answer: "A"
+      answer: "A",
   },
   {
-      question: "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+      question:
+          "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
       options: {
           A: "title",
           B: "src",
           C: "alt",
-          D: "href"
+          D: "href",
       },
-      answer: "C"
+      answer: "C",
   },
   {
-      question: "Which CSS property is used to create space around elements, outside of any defined borders?",
+      question:
+          "Which CSS property is used to create space around elements, outside of any defined borders?",
       options: {
           A: "margin",
           B: "padding",
           C: "space",
-          D: "border"
+          D: "border",
       },
-      answer: "A"
+      answer: "A",
   },
   {
-      question: "In C, which function is used to print formatted output to the console?",
+      question:
+          "In C, which function is used to print formatted output to the console?",
       options: {
           A: "print()",
           B: "cout",
           C: "printf()",
-          D: "printText()"
+          D: "printText()",
       },
-      answer: "C"
+      answer: "C",
   },
   {
       question: "Which of the following is a valid color in CSS?",
@@ -135,9 +139,9 @@ const quizQuestionsEasy = [
           A: "#12345G",
           B: "#ABCDEF",
           C: "#ZYX987",
-          D: "#7777777"
+          D: "#7777777",
       },
-      answer: "B"
+      answer: "B",
   },
   {
       question: "What does the 'href' attribute define in HTML?",
@@ -145,9 +149,9 @@ const quizQuestionsEasy = [
           A: "The source of an image",
           B: "The heading of a section",
           C: "A hyperlink reference",
-          D: "A paragraph style"
+          D: "A paragraph style",
       },
-      answer: "C"
+      answer: "C",
   },
   {
       question: "Which operator is used for exponentiation in JavaScript?",
@@ -155,9 +159,9 @@ const quizQuestionsEasy = [
           A: "^",
           B: "**",
           C: "^^",
-          D: "//"
+          D: "//",
       },
-      answer: "B"
+      answer: "B",
   },
   {
       question: "Which data type in C is used to store characters?",
@@ -165,90 +169,151 @@ const quizQuestionsEasy = [
           A: "char",
           B: "int",
           C: "string",
-          D: "float"
+          D: "float",
       },
-      answer: "A"
+      answer: "A",
   },
   {
-      question: "What is the default value of the 'type' attribute in an HTML <input> element?",
+      question:
+          "What is the default value of the 'type' attribute in an HTML <input> element?",
       options: {
           A: "text",
           B: "number",
           C: "checkbox",
-          D: "button"
+          D: "button",
       },
-      answer: "A"
-  }
+      answer: "A",
+  },
 ];
 
+// Function to create and append cards for each question
+function createQuiz() {
+  const container = document.getElementById("container");
 
-// Ensure DOM content is loaded before executing JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.container');
+  quizQuestionsEasy.forEach((questionObj, index) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-  // Function to create and append cards for each question
-  function createQuiz() {
-      quizQuestionsEasy.forEach((questionObj, index) => {
-          const card = document.createElement('div');
-          card.classList.add('card');
+    const questionNumber = index + 1;
+    card.innerHTML = `
+        <h2>Question ${questionNumber}</h2>
+        <p>${questionObj.question}</p>
+        <ul class="options">
+            <li>
+                <label>
+                    <input type="radio" name="q${questionNumber}" value="A">
+                    ${questionObj.options.A}
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="q${questionNumber}" value="B">
+                    ${questionObj.options.B}
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="q${questionNumber}" value="C">
+                    ${questionObj.options.C}
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="q${questionNumber}" value="D">
+                    ${questionObj.options.D}
+                </label>
+            </li>
+        </ul>
+    `;
 
-          const questionNumber = index + 1;
-          card.innerHTML = `
-              <h2>Question ${questionNumber}</h2>
-              <p>${questionObj.question}</p>
-              <ul class="options">
-                  <li>
-                      <label>
-                          <input type="radio" name="q${questionNumber}" value="A">
-                          ${questionObj.options.A}
-                      </label>
-                  </li>
-                  <li>
-                      <label>
-                          <input type="radio" name="q${questionNumber}" value="B">
-                          ${questionObj.options.B}
-                      </label>
-                  </li>
-                  <li>
-                      <label>
-                          <input type="radio" name="q${questionNumber}" value="C">
-                          ${questionObj.options.C}
-                      </label>
-                  </li>
-                  <li>
-                      <label>
-                          <input type="radio" name="q${questionNumber}" value="D">
-                          ${questionObj.options.D}
-                      </label>
-                  </li>
-              </ul>
-          `;
-
-          container.appendChild(card);
-      });
-  }
-
-  // Initialize quiz creation
-  createQuiz();
-});
+    container.appendChild(card);
+  });
+}
 
 // Function to handle quiz submission
 function submitQuiz() {
-  const cards = document.querySelectorAll('.card');
+  const cards = document.querySelectorAll(".card");
   let score = 0;
 
   cards.forEach((card, index) => {
-      const selectedOption = card.querySelector('input:checked');
-      if (selectedOption) {
-          const questionNumber = index + 1;
-          const userAnswer = selectedOption.value;
-          const correctAnswer = quizQuestionsEasy[index].answer;
+    const selectedOption = card.querySelector("input:checked");
+    if (selectedOption) {
+      const questionNumber = index + 1;
+      const userAnswer = selectedOption.value;
+      const correctAnswer = quizQuestionsEasy[index].answer;
 
-          if (userAnswer === correctAnswer) {
-              score++;
-          }
+      if (userAnswer === correctAnswer) {
+        score++;
       }
+    }
   });
 
-  alert(`You scored ${score} out of ${quizQuestionsEasy.length}`);
+  // Clear all content on the page
+  const mainContainer = document.getElementById("container");
+  mainContainer.innerHTML = "";
+
+  // Display "Time's Up!!" prompt and score
+  const timesUpDiv = document.getElementById("timesup");
+  timesUpDiv.style.display = "block";
+  const scoreDisplay = document.getElementById("score");
+  scoreDisplay.innerText = `You scored ${score} out of ${quizQuestionsEasy.length}`;
+
+  const cheering = document.getElementById("cheer");
+  const ImageFull = document.getElementById("Full-Score");
+  const ImageHalf = document.getElementById("Half-Score");
+  const ImageLess = document.getElementById("Less-Score");
+  const pepe = document.getElementById("pepe");
+
+
+  if (score < 9) {
+    cheering.innerText = "Bhai thoda padh liye kar kabhi kbhar"
+    ImageLess.style.display = "block";
+  }else if (score < 13) {
+    cheering.innerText = "Thoda mehnat orr bas"
+    ImageHalf.style.display = "block";
+  }else if (score < 17) {
+    cheering.innerText = "Shabash beta !!..."
+    pepe.style.display = "block";
+  }else if (score == 18) {
+    cheering.innerText = "7 crore"
+    ImageFull.style.display = "block";
+  }
 }
+
+// Function to start countdown timer
+function startCountdown(duration, display) {
+  let timer = duration, minutes, seconds;
+  const interval = setInterval(() => {
+    minutes = Math.floor(timer / 60);
+    seconds = timer % 60;
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+
+    if (--timer < 0) {
+      clearInterval(interval);
+      endTasks();
+    }
+  }, 1000);
+}
+
+// Function to handle tasks at the end of countdown
+function endTasks() {
+  submitQuiz();
+
+  // Hide the countdown timer
+  document.querySelector(".countdown-timer").style.display = "none";
+
+  // Hide the submit button
+  document.querySelector(".submit-btn").style.display = "none";
+}
+
+// Initialize quiz creation and countdown
+document.addEventListener("DOMContentLoaded", function () {
+  createQuiz();
+  let twoMinutes = 60 * 0.5,
+    display = document.querySelector("#countdown");
+  startCountdown(twoMinutes, display);
+});
