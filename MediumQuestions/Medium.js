@@ -1,153 +1,326 @@
 const quizQuestionsMedium = [
-  {
-      question: "What does SQL stand for?",
-      options: ["Structured Query Language", "Sequential Query Language", "Simple Query Language", "Static Query Language"],
-      answer: "Structured Query Language"
-  },
-  {
-      question: "Which keyword is used to declare variables in JavaScript?",
-      options: ["var", "let", "const", "int"],
-      answer: "var"
-  },
-  {
-      question: "In SQL, which statement is used to select data from a database?",
-      options: ["SELECT", "UPDATE", "INSERT", "ALTER"],
-      answer: "SELECT"
-  },
-  {
-      question: "What is the purpose of 'this' keyword in JavaScript?",
-      options: ["Refers to the current object", "Refers to the previous object", "Refers to the next object", "Refers to a specific function"],
-      answer: "Refers to the current object"
-  },
-  {
-      question: "Which data type is NOT supported in SQL?",
-      options: ["INTEGER", "BOOLEAN", "FLOAT", "ARRAY"],
-      answer: "ARRAY"
-  },
-  {
-      question: "What is the output of the following JavaScript code?\n\n```javascript\nconsole.log(2 + '2');\n```",
-      options: ["4", "22", "Error", "Undefined"],
-      answer: "22"
-  },
-  {
-      question: "Which SQL statement is used to update data in a database?",
-      options: ["UPDATE", "MODIFY", "ALTER", "CHANGE"],
-      answer: "UPDATE"
-  },
-  {
-      question: "In JavaScript, what is the difference between 'let' and 'const'?",
-      options: ["'let' is block-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned", "'let' is function-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned", "'let' is block-scoped and can be reassigned, 'const' is function-scoped and cannot be reassigned", "'let' is function-scoped and can be reassigned, 'const' is block-scoped and can be reassigned"],
-      answer: "'let' is block-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned"
-  },
-  {
-      question: "Which SQL statement is used to delete data from a database?",
-      options: ["DELETE", "REMOVE", "DROP", "ERASE"],
-      answer: "DELETE"
-  },
-  {
-      question: "What is the result of the following SQL query?\n\n```sql\nSELECT COUNT(*) FROM users;\n```",
-      options: ["Returns the number of rows in the 'users' table", "Returns the number of columns in the 'users' table", "Returns the first row from the 'users' table", "Returns all rows from the 'users' table"],
-      answer: "Returns the number of rows in the 'users' table"
-  },
-  {
-      question: "Which keyword is used to declare a constant in JavaScript?",
-      options: ["var", "let", "const", "static"],
-      answer: "const"
-  },
-  {
-      question: "In SQL, which statement is used to add new rows to a table?",
-      options: ["INSERT INTO", "ADD ROW", "ADD INTO", "CREATE ROW"],
-      answer: "INSERT INTO"
-  },
-  {
-      question: "What is the output of the following Java code snippet?\n\n```java\nint x = 5;\nint y = x++;\nSystem.out.println(y);\n```",
-      options: ["5", "6", "4", "Error"],
-      answer: "5"
-  },
-  {
-      question: "Which of the following is NOT a primitive data type in Java?",
-      options: ["int", "boolean", "array", "double"],
-      answer: "array"
-  },
-  {
-      question: "In SQL, which statement is used to change a column in a table?",
-      options: ["ALTER TABLE", "MODIFY COLUMN", "CHANGE TABLE", "UPDATE COLUMN"],
-      answer: "ALTER TABLE"
-  },
-  {
-      question: "What is the purpose of 'try-catch' in Java?",
-      options: ["To handle exceptions", "To create loops", "To declare variables", "To define classes"],
-      answer: "To handle exceptions"
-  },
-  {
-      question: "Which SQL statement is used to create a new table?",
-      options: ["CREATE TABLE", "ADD TABLE", "INSERT TABLE", "DEFINE TABLE"],
-      answer: "CREATE TABLE"
-  },
-  {
-      question: "What is the output of the following Java code snippet?\n\n```java\nString str = 'Hello';\nSystem.out.println(str.length());\n```",
-      options: ["5", "6", "Error", "None of the above"],
-      answer: "5"
-  },
-  {
-      question: "Which SQL statement is used to make sure that the changes made by the current transaction become permanent?",
-      options: ["COMMIT", "SAVE", "APPLY", "PERSIST"],
-      answer: "COMMIT"
-  },
-  {
-      question: "What is the purpose of 'static' keyword in Java?",
-      options: ["To define a constant", "To make a variable class-specific", "To define a method that can be called without creating an instance of the class", "To create a synchronized block"],
-      answer: "To define a method that can be called without creating an instance of the class"
-  }
+    {
+        question: "What does SQL stand for?",
+        options: {
+            A: "Structured Query Language",
+            B: "Sequential Query Language",
+            C: "Simple Query Language",
+            D: "Static Query Language"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which keyword is used to declare variables in JavaScript?",
+        options: {
+            A: "var",
+            B: "let",
+            C: "const",
+            D: "int"
+        },
+        answer: "A"
+    },
+    {
+        question: "In SQL, which statement is used to select data from a database?",
+        options: {
+            A: "SELECT",
+            B: "UPDATE",
+            C: "INSERT",
+            D: "ALTER"
+        },
+        answer: "A"
+    },
+    {
+        question: "What is the purpose of 'this' keyword in JavaScript?",
+        options: {
+            A: "Refers to the current object",
+            B: "Refers to the previous object",
+            C: "Refers to the next object",
+            D: "Refers to a specific function"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which data type is NOT supported in SQL?",
+        options: {
+            A: "INTEGER",
+            B: "BOOLEAN",
+            C: "FLOAT",
+            D: "ARRAY"
+        },
+        answer: "D"
+    },
+    {
+        question: "What is the output of the following JavaScript code?\n\n```javascript\nconsole.log(2 + '2');\n```",
+        options: {
+            A: "4",
+            B: "22",
+            C: "Error",
+            D: "Undefined"
+        },
+        answer: "B"
+    },
+    {
+        question: "Which SQL statement is used to update data in a database?",
+        options: {
+            A: "UPDATE",
+            B: "MODIFY",
+            C: "ALTER",
+            D: "CHANGE"
+        },
+        answer: "A"
+    },
+    {
+        question: "In JavaScript, what is the difference between 'let' and 'const'?",
+        options: {
+            A: "'let' is block-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned",
+            B: "'let' is function-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned",
+            C: "'let' is block-scoped and can be reassigned, 'const' is function-scoped and cannot be reassigned",
+            D: "'let' is function-scoped and can be reassigned, 'const' is block-scoped and can be reassigned"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which SQL statement is used to delete data from a database?",
+        options: {
+            A: "DELETE",
+            B: "REMOVE",
+            C: "DROP",
+            D: "ERASE"
+        },
+        answer: "A"
+    },
+    {
+        question: "What is the result of the following SQL query?\n\n```sql\nSELECT COUNT(*) FROM users;\n```",
+        options: {
+            A: "Returns the number of rows in the 'users' table",
+            B: "Returns the number of columns in the 'users' table",
+            C: "Returns the first row from the 'users' table",
+            D: "Returns all rows from the 'users' table"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which keyword is used to declare a constant in JavaScript?",
+        options: {
+            A: "var",
+            B: "let",
+            C: "const",
+            D: "static"
+        },
+        answer: "C"
+    },
+    {
+        question: "In SQL, which statement is used to add new rows to a table?",
+        options: {
+            A: "INSERT INTO",
+            B: "ADD ROW",
+            C: "ADD INTO",
+            D: "CREATE ROW"
+        },
+        answer: "A"
+    },
+    {
+        question: "What is the output of the following Java code snippet?\n\n```java\nint x = 5;\nint y = x++;\nSystem.out.println(y);\n```",
+        options: {
+            A: "5",
+            B: "6",
+            C: "4",
+            D: "Error"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which of the following is NOT a primitive data type in Java?",
+        options: {
+            A: "int",
+            B: "boolean",
+            C: "array",
+            D: "double"
+        },
+        answer: "C"
+    },
+    {
+        question: "In SQL, which statement is used to change a column in a table?",
+        options: {
+            A: "ALTER TABLE",
+            B: "MODIFY COLUMN",
+            C: "CHANGE TABLE",
+            D: "UPDATE COLUMN"
+        },
+        answer: "A"
+    },
+    {
+        question: "What is the purpose of 'try-catch' in Java?",
+        options: {
+            A: "To handle exceptions",
+            B: "To create loops",
+            C: "To declare variables",
+            D: "To define classes"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which SQL statement is used to create a new table?",
+        options: {
+            A: "CREATE TABLE",
+            B: "ADD TABLE",
+            C: "INSERT TABLE",
+            D: "DEFINE TABLE"
+        },
+        answer: "A"
+    },
+    {
+        question: "What is the output of the following Java code snippet?\n\n```java\nString str = 'Hello';\nSystem.out.println(str.length());\n```",
+        options: {
+            A: "5",
+            B: "6",
+            C: "Error",
+            D: "None of the above"
+        },
+        answer: "A"
+    },
+    {
+        question: "Which SQL statement is used to make sure that the changes made by the current transaction become permanent?",
+        options: {
+            A: "COMMIT",
+            B: "SAVE",
+            C: "APPLY",
+            D: "PERSIST"
+        },
+        answer: "A"
+    },
+    {
+        question: "What is the purpose of 'static' keyword in Java?",
+        options: {
+            A: "To define a constant",
+            B: "To make a variable class-specific",
+            C: "To define a method that can be called without creating an instance of the class",
+            D: "To create a synchronized block"
+        },
+        answer: "C"
+    }
 ];
 
-function populateQuiz() {
-  const container = document.querySelector('.container');
-  container.innerHTML = ''; // Clear existing content
 
-  quizQuestionsMedium.forEach((question, index) => {
-      const card = document.createElement('div');
-      card.classList.add('card');
+function createQuiz() {
+    const container = document.getElementById("container");
 
-      const questionNumber = index + 1;
-      card.innerHTML = `
-          <h2>Question ${questionNumber}</h2>
-          <p>${question.question}</p>
-          <ul class="options">
-              <li><label><input type="radio" name="q${questionNumber}" value="a"> ${question.options[0]}</label></li>
-              <li><label><input type="radio" name="q${questionNumber}" value="b"> ${question.options[1]}</label></li>
-              <li><label><input type="radio" name="q${questionNumber}" value="c"> ${question.options[2]}</label></li>
-              <li><label><input type="radio" name="q${questionNumber}" value="d"> ${question.options[3]}</label></li>
-          </ul>
-      `;
+    quizQuestionsMedium.forEach((questionObj, index) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-      container.appendChild(card);
-  });
+        const questionNumber = index + 1;
+        card.innerHTML = `
+            <h2>Question ${questionNumber}</h2>
+            <p>${questionObj.question}</p>
+            <ul class="options">
+                <li>
+                    <label>
+                        <input type="radio" name="q${questionNumber}" value="A">
+                        ${questionObj.options.A}
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="q${questionNumber}" value="B">
+                        ${questionObj.options.B}
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="q${questionNumber}" value="C">
+                        ${questionObj.options.C}
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="q${questionNumber}" value="D">
+                        ${questionObj.options.D}
+                    </label>
+                </li>
+            </ul>
+        `;
 
-  // Add submit button after all questions
-  const submitButton = document.createElement('button');
-  submitButton.textContent = 'Submit';
-  submitButton.classList.add('submit-btn');
-  submitButton.addEventListener('click', submitQuiz);
-  container.appendChild(submitButton);
+        container.appendChild(card);
+    });
 }
 
-// Function to handle quiz submission
 function submitQuiz() {
-  let score = 0;
-  const totalQuestions = quizQuestionsMedium.length;
+    const cards = document.querySelectorAll(".card");
+    let score = 0;
 
-  quizQuestionsMedium.forEach((question, index) => {
-      const selectedOption = document.querySelector(`input[name=q${index + 1}]:checked`);
-      if (selectedOption) {
-          if (selectedOption.value === question.answer.charAt(0).toLowerCase()) {
-              score++;
-          }
-      }
-  });
+    cards.forEach((card, index) => {
+        const selectedOption = card.querySelector("input:checked");
+        if (selectedOption) {
+            const questionNumber = index + 1;
+            const userAnswer = selectedOption.value;
+            const correctAnswer = quizQuestionsMedium[index].answer;
 
-  alert(`You scored ${score} out of ${totalQuestions}`);
+            if (userAnswer === correctAnswer) {
+                score++;
+            }
+        }
+    });
+
+    document.querySelector(".countdown-timer").style.display = "none";
+    document.querySelector(".submit-btn").style.display = "none";
+
+    const mainContainer = document.getElementById("container");
+    mainContainer.innerHTML = "";
+
+    const timesUpDiv = document.getElementById("timesup");
+    timesUpDiv.style.display = "block";
+    const scoreDisplay = document.getElementById("score");
+    scoreDisplay.innerText = `You scored ${score} out of ${quizQuestionsMedium.length}`;
+
+    const cheering = document.getElementById("cheer");
+    const ImageFull = document.getElementById("Full-Score");
+    const ImageHalf = document.getElementById("Half-Score");
+    const ImageLess = document.getElementById("Less-Score");
+    const pepe = document.getElementById("pepe");
+
+    if (score < 9) {
+        cheering.innerText = "Bhai thoda padh liye kar kabhi kbhar"
+        ImageLess.style.display = "block";
+    } else if (score < 14) {
+        cheering.innerText = "Thoda mehnat orr bas"
+        ImageHalf.style.display = "block";
+    } else if (score < 19) {
+        cheering.innerText = "Shabash beta !!..."
+        pepe.style.display = "block";
+    } else if (score == 20) {
+        cheering.innerText = "7 crore"
+        ImageFull.style.display = "block";
+    }
 }
 
-// Populate quiz on page load
-document.addEventListener('DOMContentLoaded', populateQuiz);
+function startCountdown(duration, display) {
+    let timer = duration, minutes, seconds;
+    const interval = setInterval(() => {
+        minutes = Math.floor(timer / 60);
+        seconds = timer % 60;
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(interval);
+            endTasks();
+        }
+    }, 1000);
+}
+
+function endTasks() {
+    submitQuiz();
+    document.querySelector(".countdown-timer").style.display = "none";
+    document.querySelector(".submit-btn").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    createQuiz();
+    let twoMinutes = 60 * 2,
+        display = document.querySelector("#countdown");
+    startCountdown(twoMinutes, display);
+});
