@@ -4,7 +4,7 @@ body {
     background: linear-gradient(240deg, #15e1b2, #00bb83);
     background-size: 500% 600%;
     animation: gradient-animation 15s ease-in-out infinite; 
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     color: white;
     overflow-x: hidden;
 }
