@@ -188,9 +188,9 @@ const quizQuestionsEasy = [
 
 // Function to create and append cards for each question
 function createQuiz() {
-  const container = document.getElementById("container");
+const container = document.getElementById("container");
 
-  quizQuestionsEasy.forEach((questionObj, index) => {
+quizQuestionsEasy.forEach((questionObj, index) => {
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -232,58 +232,64 @@ function createQuiz() {
 
 // Function to handle quiz submission
 function submitQuiz() {
-  const cards = document.querySelectorAll(".card");
-  let score = 0;
+const cards = document.querySelectorAll(".card");
+let score = 0;
 
-  cards.forEach((card, index) => {
+cards.forEach((card, index) => {
     const selectedOption = card.querySelector("input:checked");
     if (selectedOption) {
-      const questionNumber = index + 1;
-      const userAnswer = selectedOption.value;
-      const correctAnswer = quizQuestionsEasy[index].answer;
+    const questionNumber = index + 1;
+    const userAnswer = selectedOption.value;
+    const correctAnswer = quizQuestionsEasy[index].answer;
 
-      if (userAnswer === correctAnswer) {
+    if (userAnswer === correctAnswer) {
         score++;
-      }
     }
-  });
+    }
+    
+document.querySelector(".countdown-timer").style.display = "none";
+
+  // Hide the submit button
+document.querySelector(".submit-btn").style.display = "none";
+
+});
 
   // Clear all content on the page
-  const mainContainer = document.getElementById("container");
-  mainContainer.innerHTML = "";
+const mainContainer = document.getElementById("container");
+mainContainer.innerHTML = "";
 
   // Display "Time's Up!!" prompt and score
-  const timesUpDiv = document.getElementById("timesup");
-  timesUpDiv.style.display = "block";
-  const scoreDisplay = document.getElementById("score");
-  scoreDisplay.innerText = `You scored ${score} out of ${quizQuestionsEasy.length}`;
+const timesUpDiv = document.getElementById("timesup");
+timesUpDiv.style.display = "block";
+const scoreDisplay = document.getElementById("score");
+scoreDisplay.innerText = `You scored ${score} out of ${quizQuestionsEasy.length}`;
 
-  const cheering = document.getElementById("cheer");
-  const ImageFull = document.getElementById("Full-Score");
-  const ImageHalf = document.getElementById("Half-Score");
-  const ImageLess = document.getElementById("Less-Score");
-  const pepe = document.getElementById("pepe");
+const cheering = document.getElementById("cheer");
+const ImageFull = document.getElementById("Full-Score");
+const ImageHalf = document.getElementById("Half-Score");
+const ImageLess = document.getElementById("Less-Score");
+const pepe = document.getElementById("pepe");
 
 
-  if (score < 9) {
+if (score < 9) {
     cheering.innerText = "Bhai thoda padh liye kar kabhi kbhar"
     ImageLess.style.display = "block";
-  }else if (score < 13) {
+}else if (score < 13) {
     cheering.innerText = "Thoda mehnat orr bas"
     ImageHalf.style.display = "block";
-  }else if (score < 17) {
+}else if (score < 17) {
     cheering.innerText = "Shabash beta !!..."
     pepe.style.display = "block";
-  }else if (score == 18) {
+}else if (score == 18) {
     cheering.innerText = "7 crore"
     ImageFull.style.display = "block";
-  }
+}
 }
 
 // Function to start countdown timer
 function startCountdown(duration, display) {
-  let timer = duration, minutes, seconds;
-  const interval = setInterval(() => {
+let timer = duration, minutes, seconds;
+const interval = setInterval(() => {
     minutes = Math.floor(timer / 60);
     seconds = timer % 60;
 
@@ -293,27 +299,27 @@ function startCountdown(duration, display) {
     display.textContent = minutes + ":" + seconds;
 
     if (--timer < 0) {
-      clearInterval(interval);
-      endTasks();
+    clearInterval(interval);
+    endTasks();
     }
-  }, 1000);
+}, 1000);
 }
 
 // Function to handle tasks at the end of countdown
 function endTasks() {
-  submitQuiz();
+submitQuiz();
 
   // Hide the countdown timer
-  document.querySelector(".countdown-timer").style.display = "none";
+document.querySelector(".countdown-timer").style.display = "none";
 
   // Hide the submit button
-  document.querySelector(".submit-btn").style.display = "none";
+document.querySelector(".submit-btn").style.display = "none";
 }
 
 // Initialize quiz creation and countdown
 document.addEventListener("DOMContentLoaded", function () {
-  createQuiz();
+createQuiz();
   let twoMinutes = 60 * 0.5,
     display = document.querySelector("#countdown");
-  startCountdown(twoMinutes, display);
+startCountdown(twoMinutes, display);
 });

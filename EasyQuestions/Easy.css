@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh; 
-    background: linear-gradient(240deg, #15e1b2, #00bb83 , #5686ed);
+    background: linear-gradient(240deg, #15e1b2, #00bb83);
     background-size: 500% 600%;
     animation: gradient-animation 15s ease-in-out infinite; 
     font-family: Arial, sans-serif;
@@ -91,20 +91,24 @@ body {
     height: 60px;
     width: 100px;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    background: #007BFF;
-    color: white;
+    background: #0468d2;
+    color: rgb(0, 0, 0);
     font-size: large;
+    font-weight: 700;
     font-family: monospace;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .submit-btn:hover {
-    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #007BFF ;
 }
 
 #cheer{
