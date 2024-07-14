@@ -113,6 +113,9 @@ body {
 
 #cheer{
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -144,6 +147,15 @@ body {
 }
 
 #pepe{
+    display: none;
+    position: relative;
+    height: 250px;
+    left: 600px;
+    top: 550px;
+    border-radius: 80px;
+}
+
+#myMan{
     display: none;
     position: relative;
     height: 250px;

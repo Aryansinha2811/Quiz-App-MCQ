@@ -277,17 +277,21 @@ function submitQuiz() {
     const ImageFull = document.getElementById("Full-Score");
     const ImageHalf = document.getElementById("Half-Score");
     const ImageLess = document.getElementById("Less-Score");
+    const myMan = document.getElementById("myMan");
     const pepe = document.getElementById("pepe");
 
-    if (score < 9) {
+    if (score < 7) {
         cheering.innerText = "Bhai thoda padh liye kar kabhi kbhar"
         ImageLess.style.display = "block";
-    } else if (score < 14) {
+    } else if (score < 13) {
         cheering.innerText = "Thoda mehnat orr bas"
         ImageHalf.style.display = "block";
-    } else if (score < 19) {
+    } else if (score < 17) {
         cheering.innerText = "Shabash beta !!..."
         pepe.style.display = "block";
+    }else if (score < 19) {
+        cheering.innerText = "My Man "
+        myMan.style.display = "block";
     } else if (score == 20) {
         cheering.innerText = "7 crore"
         ImageFull.style.display = "block";
@@ -320,7 +324,7 @@ function endTasks() {
 
 document.addEventListener("DOMContentLoaded", function () {
     createQuiz();
-    let twoMinutes = 60 * 2,
+    let twoMinutes = 60 * 0.25,
         display = document.querySelector("#countdown");
     startCountdown(twoMinutes, display);
 });
