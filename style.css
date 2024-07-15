@@ -3,7 +3,6 @@ body {
     height: 850px;
     background: linear-gradient(45deg, #24252A, #404248);
     background-size: 600% 600%;
-    animation: gradient-animation 15s ease-in infinite;
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -14,18 +13,6 @@ body {
     }
     100% {
         transform: translateX(-100%);
-    }
-}
-
-@keyframes gradient-animation {
-    0% {
-    background-position: 0% 50%;
-    }
-    50% {
-    background-position: 100% 50%;
-    }
-    100% {
-    background-position: 0% 50%;
     }
 }
 
