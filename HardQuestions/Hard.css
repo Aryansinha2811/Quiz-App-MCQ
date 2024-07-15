@@ -1,11 +1,48 @@
 body {
     margin: 0;
-    height: 1000px;
-    background: linear-gradient(240deg, #15e1b2, #00bb83, #5686ed);
-    background-size: 600% 600%;
-    animation: gradient-animation 15s ease-in infinite;
-    font-family: Arial, sans-serif;
+    height: 100vh; 
+    background: linear-gradient(240deg, #15e1b2, #00bb83);
+    background-size: 500% 600%;
+    animation: gradient-animation 15s ease-in-out infinite; 
+    font-family: monospace;
+    font-weight: 700;
     color: white;
+    overflow-x: hidden;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.countdown-timer {
+    margin-bottom: 30px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    font-family: monospace;
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+}
+
+#timesup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
 }
 
 .container {
@@ -54,19 +91,76 @@ body {
     position: relative;
     height: 60px;
     width: 100px;
-    top: 150px;
-    left: -200px;
-    margin: 20px auto;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    background: #007BFF;
-    color: white;
+    background: #0468d2;
+    color: rgb(0, 0, 0);
     font-size: large;
+    font-weight: 700;
     font-family: monospace;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .submit-btn:hover {
-    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #007BFF ;
+}
+
+#cheer{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Full-Score{
+    display: none;
+    position: relative;
+    height: 400px;
+    left: 520px;
+    top: 550px;
+    border-radius: 40px;
+}
+
+#Half-Score{
+    display: none;
+    position: relative;
+    height: 250px;
+    left: 600px;
+    top: 550px;
+    border-radius: 80px;
+}
+
+#Less-Score{
+    display: none;
+    position: relative;
+    height: 250px;
+    left: 600px;
+    top: 550px;
+    border-radius: 80px;
+}
+
+#pepe{
+    display: none;
+    position: relative;
+    height: 250px;
+    left: 600px;
+    top: 550px;
+    border-radius: 80px;
+}
+
+#myMan{
+    display: none;
+    position: relative;
+    height: 250px;
+    left: 600px;
+    top: 550px;
+    border-radius: 80px;
 }

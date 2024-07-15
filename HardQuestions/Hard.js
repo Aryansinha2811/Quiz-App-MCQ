@@ -281,55 +281,118 @@ const quizQuestionsHard = [
   }
 ];
 
-function populateQuiz() {
-  const container = document.querySelector('.container');
-  container.innerHTML = ''; // Clear existing content
+function createQuiz() {
+    const container = document.getElementById("container");
 
-  quizQuestionsHard.forEach((question, index) => {
-      const card = document.createElement('div');
-      card.classList.add('card');
+    quizQuestionsHard.forEach((questionObj, index) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-      const questionNumber = index + 1;
-      card.innerHTML = `
-          <h2>Question ${questionNumber}</h2>
-          <p>${question.question}</p>
-          <ul class="options">
-              <li><label><input type="radio" name="q${questionNumber}" value="a"> ${question.options[0]}</label></li>
-              <li><label><input type="radio" name="q${questionNumber}" value="b"> ${question.options[1]}</label></li>
-              <li><label><input type="radio" name="q${questionNumber}" value="c"> ${question.options[2]}</label></li>
-              <li><label><input type="radio" name="q${questionNumber}" value="d"> ${question.options[3]}</label></li>
-          </ul>
-      `;
+        const questionNumber = index + 1;
+        let optionsHTML = '';
+        questionObj.options.forEach((option, i) => {
+            const optionValue = option.charAt(0);
+            optionsHTML += `
+                <li>
+                    <label>
+                        <input type="radio" name="q${questionNumber}" value="${optionValue}">
+                        ${option}
+                    </label>
+                </li>
+            `;
+        });
 
-      container.appendChild(card);
-  });
+        card.innerHTML = `
+            <h2>Question ${questionNumber}</h2>
+            <p>${questionObj.question}</p>
+            <ul class="options">
+                ${optionsHTML}
+            </ul>
+        `;
 
-  // Add submit button after all questions
-  const submitButton = document.createElement('button');
-  submitButton.textContent = 'Submit';
-  submitButton.classList.add('submit-btn');
-  submitButton.addEventListener('click', submitQuiz);
-  container.appendChild(submitButton);
+        container.appendChild(card);
+    });
 }
 
-// Function to handle quiz submission
 function submitQuiz() {
-  let score = 0;
-  const totalQuestions = quizQuestionsHard.length;
+    const cards = document.querySelectorAll(".card");
+    let score = 0;
 
-  quizQuestionsHard.forEach((question, index) => {
-      const selectedOption = document.querySelector(`input[name="q${index + 1}"]:checked`);
-      if (selectedOption) {
-          const userAnswer = selectedOption.value;
-          if (userAnswer === question.answer.charAt(0).toLowerCase()) {
-              score++;
-          }
-      }
-  });
+    cards.forEach((card, index) => {
+        const selectedOption = card.querySelector("input:checked");
+        if (selectedOption) {
+            const userAnswer = selectedOption.value;
+            const correctAnswer = quizQuestionsHard[index].answer;
 
-  const percentageScore = (score / totalQuestions) * 100;
-  alert(`You scored ${score} out of ${totalQuestions}. (${percentageScore}%)`);
+            if (userAnswer === correctAnswer) {
+                score++;
+            }
+        }
+    });
+
+    document.querySelector(".countdown-timer").style.display = "none";
+    document.querySelector(".submit-btn").style.display = "none";
+
+    const mainContainer = document.getElementById("container");
+    mainContainer.innerHTML = "";
+
+    const timesUpDiv = document.getElementById("timesup");
+    timesUpDiv.style.display = "block";
+    const scoreDisplay = document.getElementById("score");
+    scoreDisplay.innerText = `You scored ${score} out of ${quizQuestionsHard.length}`;
+
+    const cheering = document.getElementById("cheer");
+    const ImageFull = document.getElementById("Full-Score");
+    const ImageHalf = document.getElementById("Half-Score");
+    const ImageLess = document.getElementById("Less-Score");
+    const myMan = document.getElementById("myMan");
+    const pepe = document.getElementById("pepe");
+
+    if (score < 10) {
+        cheering.innerText = "Bhai thoda padh liye kar kabhi kbhar";
+        ImageLess.style.display = "block";
+    } else if (score < 17) {
+        cheering.innerText = "Thoda mehnat orr bas";
+        ImageHalf.style.display = "block";
+    } else if (score < 23) {
+        cheering.innerText = "Shabash beta !!...";
+        pepe.style.display = "block";
+    } else if (score < 25) {
+        cheering.innerText = "My Man";
+        myMan.style.display = "block";
+    } else if (score === quizQuestionsHard.length) {
+        cheering.innerText = "7 crore";
+        ImageFull.style.display = "block";
+    }
 }
 
-// Populate the quiz when the page loads
-window.addEventListener('DOMContentLoaded', populateQuiz);
+function startCountdown(duration, display) {
+    let timer = duration, minutes, seconds;
+    const interval = setInterval(() => {
+        minutes = Math.floor(timer / 60);
+        seconds = timer % 60;
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(interval);
+            endTasks();
+        }
+    }, 1000);
+}
+
+function endTasks() {
+    submitQuiz();
+    document.querySelector(".countdown-timer").style.display = "none";
+    document.querySelector(".submit-btn").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    createQuiz();
+    let twoMinutes = 60 * 2,
+        display = document.querySelector("#countdown");
+    startCountdown(twoMinutes, display);
+});
