@@ -5,6 +5,7 @@ body {
     background-size: 500% 600%;
     animation: gradient-animation 15s ease-in-out infinite; 
     font-family: monospace;
+    font-weight: 700;
     color: white;
     overflow-x: hidden;
 }
