@@ -27,7 +27,7 @@ body {
     transform: translate(-50%, -50%);
     font-family: monospace;
     font-size: 40px;
-    color: #000;
+    color: #fff;
     font-weight: bold;
     text-align: center;
 }
@@ -79,7 +79,6 @@ body {
     height: 60px;
     width: 100px;
     left: 50%;
-    /* transform: translateX(-50%); */
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
@@ -100,7 +99,7 @@ body {
 }
 
 #cheer{
-    color: black;
+    color: white;
 }
 
 
