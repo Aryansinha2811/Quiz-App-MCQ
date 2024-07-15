@@ -319,7 +319,7 @@ document.querySelector(".submit-btn").style.display = "none";
 // Initialize quiz creation and countdown
 document.addEventListener("DOMContentLoaded", function () {
 createQuiz();
-  let twoMinutes = 60 * 0.5,
+  let twoMinutes = 60 * 2,
     display = document.querySelector("#countdown");
 startCountdown(twoMinutes, display);
 });
