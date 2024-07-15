@@ -13,8 +13,16 @@
 </head>
 <body>
     <div class="content">
-        <h2>Explore -> Learn -> Quiz!</h2>
-        <h4>Check your Knowledge</h4>
+        <h2>Explore -> <span id="learn">Learn</span> -> Quiz!</h2>
+        <h4 id="quote">Check your Knowledge</h4>
+
+        <!-- This is the Information Ticker  -->
+    <div class="info-ticker">
+        <div class="info-items" id="infoItems">
+            <!-- Information items will be injected here by JavaScript -->
+            <h3>Once you start the Quiz you have to answer the questions in 2 minutes !! So please watch the timer as you go ! </h3>
+        </div>
+    </div>
 
         <div class="cards-container">
             <div class="card" data-url="EasyQuestions/Easy.html" onclick="selectCard(this)" >
