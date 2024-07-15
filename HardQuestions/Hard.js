@@ -1,35 +1,35 @@
 const quizQuestionsHard = [
-  {
-      question: "What is a closure in JavaScript?",
-      options: [
-          "A) A function that has access to its outer function's scope even after the outer function has finished executing",
-          "B) A function that is defined inside another function",
-          "C) A function that returns another function",
-          "D) All of the above"
-      ],
-      answer: "A) A function that has access to its outer function's scope even after the outer function has finished executing"
-  },
-  {
-      question: "What is the purpose of 'npm' in Node.js?",
-      options: [
-          "A) To manage packages/modules",
-          "B) To create databases",
-          "C) To define routes",
-          "D) To style webpages"
-      ],
-      answer: "A) To manage packages/modules"
-  },
-  {
-      question: "In Java, what is the difference between '== and '.equals()' when comparing strings?",
-      options: [
-          "A) '==' compares object references, '.equals()' compares string contents",
-          "B) '==' compares string contents, '.equals()' compares object references",
-          "C) '==' and '.equals()' both compare string contents",
-          "D) '==' and '.equals()' are not used for string comparison"
-      ],
-      answer: "A) '==' compares object references, '.equals()' compares string contents"
-  },
-  {
+{
+    question: "What is a closure in JavaScript?",
+    options: [
+        "A) A function that has access to its outer function's scope even after the outer function has finished executing",
+        "B) A function that is defined inside another function",
+        "C) A function that returns another function",
+        "D) All of the above"
+    ],
+    answer: "A) A function that has access to its outer function's scope even after the outer function has finished executing"
+},
+{
+    question: "What is the purpose of 'npm' in Node.js?",
+    options: [
+        "A) To manage packages/modules",
+        "B) To create databases",
+        "C) To define routes",
+        "D) To style webpages"
+    ],
+    answer: "A) To manage packages/modules"
+},
+{
+    question: "In Java, what is the difference between '== and '.equals()' when comparing strings?",
+    options: [
+        "A) '==' compares object references, '.equals()' compares string contents",
+        "B) '==' compares string contents, '.equals()' compares object references",
+        "C) '==' and '.equals()' both compare string contents",
+        "D) '==' and '.equals()' are not used for string comparison"
+    ],
+    answer: "A) '==' compares object references, '.equals()' compares string contents"
+},
+{
       question: "What does MVC stand for in web development?",
       options: [
           "A) Model-View-Controller",
@@ -268,17 +268,17 @@ const quizQuestionsHard = [
           "D) To manage database connections"
       ],
       answer: "A) To serve as the entry point for a web page"
-  },
-  {
-      question: "In DBMS, what does 'DML' stand for?",
-      options: [
-          "A) Data Manipulation Language",
-          "B) Data Model Language",
-          "C) Data Management Language",
-          "D) Database Management Language"
-      ],
-      answer: "A) Data Manipulation Language"
-  }
+},
+{
+    question: "In DBMS, what does 'DML' stand for?",
+    options: [
+        "A) Data Manipulation Language",
+        "B) Data Model Language",
+        "C) Data Management Language",
+        "D) Database Management Language"
+    ],
+    answer: "A) Data Manipulation Language"
+}
 ];
 
 function createQuiz() {
