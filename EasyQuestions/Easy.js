@@ -164,26 +164,26 @@ const quizQuestionsEasy = [
       answer: "B",
   },
   {
-      question: "Which data type in C is used to store characters?",
-      options: {
-          A: "char",
-          B: "int",
-          C: "string",
-          D: "float",
-      },
-      answer: "A",
-  },
-  {
-      question:
-          "What is the default value of the 'type' attribute in an HTML <input> element?",
-      options: {
-          A: "text",
-          B: "number",
-          C: "checkbox",
-          D: "button",
-      },
-      answer: "A",
-  },
+    question: "Which data type in C is used to store characters?",
+    options: {
+        A: "char",
+        B: "int",
+        C: "string",
+        D: "float",
+    },
+    answer: "A",
+},
+{
+    question:
+        "What is the default value of the 'type' attribute in an HTML <input> element?",
+    options: {
+        A: "text",
+        B: "number",
+        C: "checkbox",
+        D: "button",
+    },
+    answer: "A",
+},
 ];
 
 // Function to create and append cards for each question
@@ -227,7 +227,7 @@ quizQuestionsEasy.forEach((questionObj, index) => {
     `;
 
     container.appendChild(card);
-  });
+});
 }
 
 // Function to handle quiz submission
