@@ -151,3 +151,42 @@ body {
     top: 550px;
     border-radius: 80px;
 }
+
+@media (min-width: 280px) and (max-width: 500px){
+    .countdown-timer {
+        left: 40%;
+    }
+    .submit-btn {
+        left: 45%;
+    }
+    #Full-Score{
+        height: 200px;
+        left: 100px;
+        top: 930px;
+        border-radius: 60px;
+    }
+    #Half-Score{
+        height: 200px;
+        left: 100px;
+        top: 930px;
+        border-radius: 60px;
+    }
+    #Less-Score{
+        height: 200px;
+        left: 100px;
+        top: 930px;
+        border-radius: 60px;
+    }
+    #pepe{
+        height: 200px;
+        left: 100px;
+        top: 930px;
+        border-radius: 60px;
+    }
+    #myMan{
+        height: 200px;
+        left: 100px;
+        top: 930px;
+        border-radius: 60px;
+    }
+}
