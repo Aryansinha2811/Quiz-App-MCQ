@@ -203,7 +203,7 @@ function endTasks() {
 
 document.addEventListener("DOMContentLoaded", function () {
     createQuiz();
-    let twoMinutes = 60 * 2,
+    let fourMinutes = 60 * 4,
         display = document.querySelector("#countdown");
-    startCountdown(twoMinutes, display);
+    startCountdown(fourMinutes, display);
 });
