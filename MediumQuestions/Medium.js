@@ -1,211 +1,102 @@
-const quizQuestionsMedium = [
+const indiaMediumLevelQuestions = [
     {
-        question: "What does SQL stand for?",
-        options: {
-            A: "Structured Query Language",
-            B: "Sequential Query Language",
-            C: "Simple Query Language",
-            D: "Static Query Language"
-        },
+        question: "Which Indian ruler is known for founding the city of Fatehpur Sikri?",
+        options: { A: "Shah Jahan", B: "Babur", C: "Akbar", D: "Humayun" },
+        answer: "C"
+    },
+    {
+        question: "Who was the first woman to become the Prime Minister of India?",
+        options: { A: "Indira Gandhi", B: "Pratibha Patil", C: "Sushma Swaraj", D: "Sarojini Naidu" },
         answer: "A"
     },
     {
-        question: "Which keyword is used to declare variables in JavaScript?",
-        options: {
-            A: "var",
-            B: "let",
-            C: "const",
-            D: "int"
-        },
-        answer: "A"
-    },
-    {
-        question: "In SQL, which statement is used to select data from a database?",
-        options: {
-            A: "SELECT",
-            B: "UPDATE",
-            C: "INSERT",
-            D: "ALTER"
-        },
-        answer: "A"
-    },
-    {
-        question: "What is the purpose of 'this' keyword in JavaScript?",
-        options: {
-            A: "Refers to the current object",
-            B: "Refers to the previous object",
-            C: "Refers to the next object",
-            D: "Refers to a specific function"
-        },
-        answer: "A"
-    },
-    {
-        question: "Which data type is NOT supported in SQL?",
-        options: {
-            A: "INTEGER",
-            B: "BOOLEAN",
-            C: "FLOAT",
-            D: "ARRAY"
-        },
+        question: "Which Indian state was formed last, in the year 2014?",
+        options: { A: "Uttarakhand", B: "Chhattisgarh", C: "Jharkhand", D: "Telangana" },
         answer: "D"
     },
     {
-        question: "What is the output of the following JavaScript code?\n\n```javascript\nconsole.log(2 + '2');\n```",
-        options: {
-            A: "4",
-            B: "22",
-            C: "Error",
-            D: "Undefined"
-        },
+        question: "Which Mughal emperor commissioned the construction of the Red Fort in Delhi?",
+        options: { A: "Akbar", B: "Aurangzeb", C: "Shah Jahan", D: "Babur" },
+        answer: "C"
+    },
+    {
+        question: "Which Indian freedom fighter gave the slogan 'Inquilab Zindabad'?",
+        options: { A: "Mahatma Gandhi", B: "Bhagat Singh", C: "Subhas Chandra Bose", D: "Lala Lajpat Rai" },
         answer: "B"
     },
     {
-        question: "Which SQL statement is used to update data in a database?",
-        options: {
-            A: "UPDATE",
-            B: "MODIFY",
-            C: "ALTER",
-            D: "CHANGE"
-        },
+        question: "Which is the oldest mountain range in India?",
+        options: { A: "Aravalli Range", B: "Himalayas", C: "Western Ghats", D: "Vindhya Range" },
         answer: "A"
     },
     {
-        question: "In JavaScript, what is the difference between 'let' and 'const'?",
-        options: {
-            A: "'let' is block-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned",
-            B: "'let' is function-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned",
-            C: "'let' is block-scoped and can be reassigned, 'const' is function-scoped and cannot be reassigned",
-            D: "'let' is function-scoped and can be reassigned, 'const' is block-scoped and can be reassigned"
-        },
-        answer: "A"
+        question: "Who was the first Indian to win a Nobel Prize?",
+        options: { A: "C.V. Raman", B: "Rabindranath Tagore", C: "Amartya Sen", D: "Mother Teresa" },
+        answer: "B"
     },
     {
-        question: "Which SQL statement is used to delete data from a database?",
-        options: {
-            A: "DELETE",
-            B: "REMOVE",
-            C: "DROP",
-            D: "ERASE"
-        },
-        answer: "A"
+        question: "The Khajuraho Group of Monuments is located in which state?",
+        options: { A: "Uttar Pradesh", B: "Madhya Pradesh", C: "Rajasthan", D: "Maharashtra" },
+        answer: "B"
     },
     {
-        question: "What is the result of the following SQL query?\n\n```sql\nSELECT COUNT(*) FROM users;\n```",
-        options: {
-            A: "Returns the number of rows in the 'users' table",
-            B: "Returns the number of columns in the 'users' table",
-            C: "Returns the first row from the 'users' table",
-            D: "Returns all rows from the 'users' table"
-        },
-        answer: "A"
+        question: "Which Indian state has the longest coastline?",
+        options: { A: "Tamil Nadu", B: "Andhra Pradesh", C: "Maharashtra", D: "Gujarat" },
+        answer: "D"
     },
     {
-        question: "Which keyword is used to declare a constant in JavaScript?",
-        options: {
-            A: "var",
-            B: "let",
-            C: "const",
-            D: "static"
-        },
+        question: "In which year was the Indian Constitution adopted?",
+        options: { A: "1950", B: "1947", C: "1949", D: "1952" },
         answer: "C"
     },
     {
-        question: "In SQL, which statement is used to add new rows to a table?",
-        options: {
-            A: "INSERT INTO",
-            B: "ADD ROW",
-            C: "ADD INTO",
-            D: "CREATE ROW"
-        },
-        answer: "A"
+        question: "Which dynasty built the Brihadeeswarar Temple in Tamil Nadu?",
+        options: { A: "Pallava", B: "Chola", C: "Cheras", D: "Pandyas" },
+        answer: "B"
     },
     {
-        question: "What is the output of the following Java code snippet?\n\n```java\nint x = 5;\nint y = x++;\nSystem.out.println(y);\n```",
-        options: {
-            A: "5",
-            B: "6",
-            C: "4",
-            D: "Error"
-        },
-        answer: "A"
-    },
-    {
-        question: "Which of the following is NOT a primitive data type in Java?",
-        options: {
-            A: "int",
-            B: "boolean",
-            C: "array",
-            D: "double"
-        },
+        question: "Which is the largest freshwater lake in India?",
+        options: { A: "Chilka Lake", B: "Dal Lake", C: "Wular Lake", D: "Pulicat Lake" },
         answer: "C"
     },
     {
-        question: "In SQL, which statement is used to change a column in a table?",
-        options: {
-            A: "ALTER TABLE",
-            B: "MODIFY COLUMN",
-            C: "CHANGE TABLE",
-            D: "UPDATE COLUMN"
-        },
+        question: "Who is the author of the book 'Discovery of India'?",
+        options: { A: "Jawaharlal Nehru", B: "Rabindranath Tagore", C: "Dr. B.R. Ambedkar", D: "Sarojini Naidu" },
         answer: "A"
     },
     {
-        question: "What is the purpose of 'try-catch' in Java?",
-        options: {
-            A: "To handle exceptions",
-            B: "To create loops",
-            C: "To declare variables",
-            D: "To define classes"
-        },
-        answer: "A"
+        question: "In which state is the Sundarbans National Park located?",
+        options: { A: "Odisha", B: "West Bengal", C: "Assam", D: "Jharkhand" },
+        answer: "B"
     },
     {
-        question: "Which SQL statement is used to create a new table?",
-        options: {
-            A: "CREATE TABLE",
-            B: "ADD TABLE",
-            C: "INSERT TABLE",
-            D: "DEFINE TABLE"
-        },
-        answer: "A"
-    },
-    {
-        question: "What is the output of the following Java code snippet?\n\n```java\nString str = 'Hello';\nSystem.out.println(str.length());\n```",
-        options: {
-            A: "5",
-            B: "6",
-            C: "Error",
-            D: "None of the above"
-        },
-        answer: "A"
-    },
-    {
-        question: "Which SQL statement is used to make sure that the changes made by the current transaction become permanent?",
-        options: {
-            A: "COMMIT",
-            B: "SAVE",
-            C: "APPLY",
-            D: "PERSIST"
-        },
-        answer: "A"
-    },
-    {
-        question: "What is the purpose of 'static' keyword in Java?",
-        options: {
-            A: "To define a constant",
-            B: "To make a variable class-specific",
-            C: "To define a method that can be called without creating an instance of the class",
-            D: "To create a synchronized block"
-        },
+        question: "Which Mughal ruler was the last emperor of India?",
+        options: { A: "Shah Jahan", B: "Akbar II", C: "Bahadur Shah II", D: "Aurangzeb" },
         answer: "C"
+    },
+    {
+        question: "Which Indian scientist is credited with launching India’s first satellite, Aryabhata?",
+        options: { A: "Vikram Sarabhai", B: "A.P.J. Abdul Kalam", C: "Homi J. Bhabha", D: "Satish Dhawan" },
+        answer: "A"
+    },
+    {
+        question: "Which river flows through the Thar Desert in India?",
+        options: { A: "Godavari", B: "Tapti", C: "Sabarmati", D: "Luni" },
+        answer: "D"
+    },
+    {
+        question: "Which Indian state is known for the dance form 'Kathakali'?",
+        options: { A: "Tamil Nadu", B: "Kerala", C: "Karnataka", D: "Andhra Pradesh" },
+        answer: "B"
     }
 ];
+
 
 
 function createQuiz() {
     const container = document.getElementById("container");
 
-    quizQuestionsMedium.forEach((questionObj, index) => {
+    indiaMediumLevelQuestions.forEach((questionObj, index) => {
         const card = document.createElement("div");
         card.classList.add("card");
 
@@ -254,7 +145,7 @@ function submitQuiz() {
         if (selectedOption) {
             const questionNumber = index + 1;
             const userAnswer = selectedOption.value;
-            const correctAnswer = quizQuestionsMedium[index].answer;
+            const correctAnswer = indiaMediumLevelQuestions[index].answer;
 
             if (userAnswer === correctAnswer) {
                 score++;
@@ -271,31 +162,19 @@ function submitQuiz() {
     const timesUpDiv = document.getElementById("timesup");
     timesUpDiv.style.display = "block";
     const scoreDisplay = document.getElementById("score");
-    scoreDisplay.innerText = `You scored ${score} out of ${quizQuestionsMedium.length}`;
+    scoreDisplay.innerText = `You scored ${score} out of ${indiaMediumLevelQuestions.length}`;
 
     const cheering = document.getElementById("cheer");
-    const ImageFull = document.getElementById("Full-Score");
-    const ImageHalf = document.getElementById("Half-Score");
-    const ImageLess = document.getElementById("Less-Score");
-    const myMan = document.getElementById("myMan");
-    const pepe = document.getElementById("pepe");
 
     if (score < 7) {
-        cheering.innerText = "Bhai thoda padh liye kar kabhi kbhar"
-        ImageLess.style.display = "block";
+        cheering.innerText = "Work a Little bit More !"
     } else if (score < 13) {
-        cheering.innerText = "Thoda mehnat orr bas"
-        ImageHalf.style.display = "block";
+        cheering.innerText = "Nice Try !"
     } else if (score < 17) {
-        cheering.innerText = "Shabash beta !!..."
-        pepe.style.display = "block";
-    }else if (score < 19) {
-        cheering.innerText = "My Man "
-        myMan.style.display = "block";
-    } else if (score == 20) {
-        cheering.innerText = "7 crore"
-        ImageFull.style.display = "block";
-    }
+        cheering.innerText = "You are Good at this"
+    } else if (score = indiaMediumLevelQuestions.length) {
+        cheering.innerText = "Genius"
+    } 
 }
 
 function startCountdown(duration, display) {
